@@ -3,74 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A step-by-step guide to UMSI engaged learning resources, organized by each phase of your project.">
     <title>Home | UMSI Engaged Learning Office</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GenAI citation: Claude (Anthropic) helped draft the lifecycle phase summaries,
+         experience-type descriptions, and the page markup structure (October 2026).
+         Phase 4 and 5 summaries are adapted from the ELO client proposal. -->
 </head>
 <body>
 
-    <header>
+    <a class="skip-link" href="#main">Skip to Main Content</a>
 
-        <a href="#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prep.html">Preparing for Your Experience</a></li>
-                <li><a href="starting.html">Starting Your Experience</a></li>
-                <li><a href="during.html">During Your Experience</a></li>
+    <header class="site-header">
+        <a class="brand-link" href="index.html">
+            <img src="images/umsi-logo-small.jpg" alt="University of Michigan School of Information" width="160" height="160">
+            <span>
+                <span class="brand-name">Engaged Learning Office</span>
+                <span class="brand-sub">Your guide to every phase of engaged learning</span>
+            </span>
+        </a>
+        <nav aria-label="Main">
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page"><span class="nav-kicker">Start here</span> <span class="nav-label">Home</span></a></li>
+                <li><a href="prep.html"><span class="nav-kicker">Phase 1</span> <span class="nav-label">Preparing</span></a></li>
+                <li><a href="starting.html"><span class="nav-kicker">Phase 2</span> <span class="nav-label">Starting</span></a></li>
+                <li><a href="during.html"><span class="nav-kicker">Phase 3</span> <span class="nav-label">During</span></a></li>
             </ul>
         </nav>
-        <h1>Launch Your Engaged Learning Journey</h1>
     </header>
 
-<main id="main">
+<main id="main" tabindex="-1">
 
-    <section>
-        <h2>Transform Your Academic Foundation into Real-World Impact</h2>
-        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-        <p>The UMSI Engaged Learning Office (ELO) guides you through the crucial early stages of project work&mdash;from self-reflection and community context to team charters and initial client kickoff.</p>
-        <ul>
-            <li><a href="prep.html">Phase 1: Preparing</a></li>
-            <li><a href="starting.html">Phase 2: Starting</a></li>
+    <section class="hero" aria-labelledby="page-title">
+        <img class="hero-img"
+             src="images/umsi-backpack-fall-800.jpg"
+             srcset="images/umsi-backpack-fall-800.jpg 800w, images/umsi-backpack-fall.jpg 1200w"
+             sizes="100vw"
+             width="800" height="534"
+             alt="A student wearing a UMSI backpack walks across the Diag on a fall day.">
+        <div class="hero-card">
+            <p class="eyebrow">UMSI Engaged Learning Office</p>
+            <h1 id="page-title">Launch Your Engaged Learning Journey</h1>
+            <p class="hero-tagline">Transform your academic foundation into real-world impact.</p>
+            <p>The Engaged Learning Office (ELO) guides you through every stage of project work&mdash;from self-reflection and community context to team charters and your first client kickoff.</p>
+            <div class="btn-row">
+                <a class="btn btn-primary" href="prep.html">Start with Phase 1: Preparing</a>
+                <a class="btn btn-ghost" href="#lifecycle">See all five phases</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-title">
+        <p class="eyebrow">Why it matters</p>
+        <h2 id="why-title">Engaged Learning Starts Before the Work Begins</h2>
+        <div class="callout">
+            <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
+            <p>Taking time to reflect on your own positionality, audit your team's skills, and listen deeply to your partner's goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, a class deliverable becomes a reciprocal partnership that creates real value for everyone involved.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="lifecycle" aria-labelledby="lifecycle-title">
+        <p class="eyebrow">Your roadmap</p>
+        <h2 id="lifecycle-title">The Engaged Learning Lifecycle</h2>
+        <p class="section-intro">Every engaged learning experience moves through five phases. Find the phase you are in and jump straight to the tools you need right now.</p>
+
+        <ol class="timeline">
+            <li class="timeline-item">
+                <span class="timeline-num" aria-hidden="true">1</span>
+                <div class="timeline-body">
+                    <h3>Preparing for the Experience</h3>
+                    <p>Set goals, understand community context, and evaluate team readiness before work begins.</p>
+                    <a class="text-link" href="prep.html">Explore Phase 1: Preparing</a>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-num" aria-hidden="true">2</span>
+                <div class="timeline-body">
+                    <h3>Starting the Experience</h3>
+                    <p>Establish professional communication, run your first meetings, and finalize partnership agreements.</p>
+                    <a class="text-link" href="starting.html">Explore Phase 2: Starting</a>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-num" aria-hidden="true">3</span>
+                <div class="timeline-body">
+                    <h3>During the Experience</h3>
+                    <p>Manage adaptive projects, conduct human-centered fieldwork, and give and receive constructive feedback.</p>
+                    <a class="text-link" href="during.html">Explore Phase 3: During</a>
+                </div>
+            </li>
+            <li class="timeline-item timeline-upcoming">
+                <span class="timeline-num" aria-hidden="true">4</span>
+                <div class="timeline-body">
+                    <h3>Ending the Experience</h3>
+                    <p>Complete and hand off your work, communicate results, and close relationships appropriately.</p>
+                    <p class="status-tag">Resources coming soon</p>
+                </div>
+            </li>
+            <li class="timeline-item timeline-upcoming">
+                <span class="timeline-num" aria-hidden="true">5</span>
+                <div class="timeline-body">
+                    <h3>After the Experience</h3>
+                    <p>Articulate your skills, add the work to your portfolio or resume, and stay connected with partners.</p>
+                    <p class="status-tag">Resources coming soon</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section class="section" aria-labelledby="types-title">
+        <p class="eyebrow">One hub, many paths</p>
+        <h2 id="types-title">Built for Every Kind of Experience</h2>
+        <p class="section-intro">The same lifecycle and resources support every engaged learning experience at UMSI, so you never have to hunt for duplicate materials.</p>
+        <ul class="type-grid">
+            <li class="type-card">
+                <h3>Client-Based Projects</h3>
+                <p>Solve real problems for real organizations.</p>
+            </li>
+            <li class="type-card">
+                <h3>Community Engagement</h3>
+                <p>Partner with local groups on shared goals.</p>
+            </li>
+            <li class="type-card">
+                <h3>Global Experiences</h3>
+                <p>Learn and work across cultures and borders.</p>
+            </li>
+            <li class="type-card">
+                <h3>Research</h3>
+                <p>Contribute to faculty-led and independent inquiry.</p>
+            </li>
+            <li class="type-card">
+                <h3>Entrepreneurship</h3>
+                <p>Develop ventures and start-up ideas.</p>
+            </li>
+            <li class="type-card">
+                <h3>Applied Learning</h3>
+                <p>Internships, practicums, and more.</p>
+            </li>
         </ul>
     </section>
 
-    <section>
-        <h2>Why Engaged Learning Starts Before the Work Begins</h2>
-        <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
-        <p>The initial phase of a project is rarely about jumping straight into execution&mdash;it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team's collective skills, and listen deeply to your partner's goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
+    <section class="section section-alt" aria-labelledby="tools-title">
+        <p class="eyebrow">What you'll find</p>
+        <h2 id="tools-title">Tools for Every Step</h2>
+        <p class="section-intro">Each phase page gathers the ELO's most useful resources in one place.</p>
+        <ul class="chip-list">
+            <li>Templates &amp; worksheets</li>
+            <li>How-to guides</li>
+            <li>Checklists</li>
+            <li>Frameworks</li>
+            <li>Agreements &amp; forms</li>
+            <li>Email &amp; agenda examples</li>
+            <li>Reflection activities</li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Explore the Engaged Learning Journey</h2>
-        <p>Use the navigation above to move through each phase of your project, from early preparation through active execution.</p>
-
-        <article>
-            <h3>Phase 1: Preparing for the Experience</h3>
-            <p>Setting the foundation, understanding community context, and evaluating team readiness before work begins.</p>
-            <a href="prep.html">Visit Preparing for Your Experience</a>
-        </article>
-
-        <article>
-            <h3>Phase 2: Starting the Experience</h3>
-            <p>Establishing professional communication, conducting initial meetings, and finalizing partnership agreements.</p>
-            <a href="starting.html">Visit Starting Your Experience</a>
-        </article>
-
-        <article>
-            <h3>Navigating Your Active Project</h3>
-            <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
-            <a href="during.html">Visit During Your Experience</a>
-        </article>
+    <section class="section" aria-labelledby="help-title">
+        <div class="help-banner">
+            <p class="eyebrow">Need a hand?</p>
+            <h2 id="help-title">The ELO Team Is Here to Help</h2>
+            <p>Not sure which phase you are in or which resource fits your project? Reach out and we will point you in the right direction.</p>
+            <a class="btn btn-primary" href="mailto:umsi.engagement@umich.edu">Email the ELO</a>
+        </div>
     </section>
 
 </main>
 
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-        <address>
-            <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-        </address>
-        <p>&copy; 2026 Regents of the University of Michigan</p>
+    <footer class="site-footer">
+        <div>
+            <p class="footer-title">UMSI Engaged Learning Office</p>
+            <p class="footer-about">Transformational engaged learning experiences for the School of Information and the communities we serve.</p>
+        </div>
+        <nav aria-label="Footer">
+            <h2 class="footer-heading">Explore</h2>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prep.html">Preparing</a></li>
+                <li><a href="starting.html">Starting</a></li>
+                <li><a href="during.html">During</a></li>
+            </ul>
+        </nav>
+        <div class="footer-contact">
+            <h2 class="footer-heading">Contact</h2>
+            <address>
+                <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a><br>
+                105 S. State Street<br>
+                Ann Arbor, MI 48109
+            </address>
+            <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">About the Engaged Learning Office</a>
+        </div>
+        <p class="footer-legal">&copy; 2026 Regents of the University of Michigan</p>
     </footer>
 
 </body>

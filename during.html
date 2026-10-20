@@ -3,116 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phase 3 of the UMSI engaged learning lifecycle: manage your project, communicate with partners, and navigate challenges.">
     <title>During Your Experience | UMSI Engaged Learning Office</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GenAI citation: Claude (Anthropic) helped draft the "Ready to move on?" checklist,
+         the rewritten "Navigating Challenges" objective, and the page markup structure
+         (October 2026). Resource names come from the ELO Content Document. -->
 </head>
 <body>
 
-    <header>
+    <a class="skip-link" href="#main">Skip to Main Content</a>
 
-        <a href="#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prep.html">Preparing for Your Experience</a></li>
-                <li><a href="starting.html">Starting Your Experience</a></li>
-                <li><a href="during.html">During Your Experience</a></li>
+    <header class="site-header">
+        <a class="brand-link" href="index.html">
+            <img src="images/umsi-logo-small.jpg" alt="University of Michigan School of Information" width="160" height="160">
+            <span>
+                <span class="brand-name">Engaged Learning Office</span>
+                <span class="brand-sub">Your guide to every phase of engaged learning</span>
+            </span>
+        </a>
+        <nav aria-label="Main">
+            <ul class="nav-list">
+                <li><a href="index.html"><span class="nav-kicker">Start here</span> <span class="nav-label">Home</span></a></li>
+                <li><a href="prep.html"><span class="nav-kicker">Phase 1</span> <span class="nav-label">Preparing</span></a></li>
+                <li><a href="starting.html"><span class="nav-kicker">Phase 2</span> <span class="nav-label">Starting</span></a></li>
+                <li><a href="during.html" aria-current="page"><span class="nav-kicker">Phase 3</span> <span class="nav-label">During</span></a></li>
             </ul>
         </nav>
-        <h1>During the Experience!</h1>
     </header>
 
-<main id="main">
+<main id="main" tabindex="-1">
 
-    <section>
-        <h2>Navigating Your Active Project</h2>
-        <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
+    <section class="page-intro" aria-labelledby="page-title">
+        <p class="phase-badge">Phase 3 of 5</p>
+        <h1 id="page-title">During Your Experience</h1>
+        <p class="lead">Master adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
+
+        <ol class="journey" aria-label="Engaged learning lifecycle progress">
+            <li><a class="journey-step" href="prep.html"><span class="journey-num">1</span><span class="journey-label">Prepare</span></a></li>
+            <li><a class="journey-step" href="starting.html"><span class="journey-num">2</span><span class="journey-label">Start</span></a></li>
+            <li><span class="journey-step" aria-current="step"><span class="journey-num">3</span><span class="journey-label">During</span></span></li>
+            <li><span class="journey-step journey-upcoming"><span class="journey-num">4</span><span class="journey-label">End<span class="visually-hidden"> (coming soon)</span></span></span></li>
+            <li><span class="journey-step journey-upcoming"><span class="journey-num">5</span><span class="journey-label">After<span class="visually-hidden"> (coming soon)</span></span></span></li>
+        </ol>
     </section>
 
-    <section>
-        <h2>The Value of Navigating Friction &amp; Active Execution</h2>
-        <p>The middle of an engaged learning project is where real growth happens&mdash;and where real challenges surface. Real-world projects rarely follow a straight line. Requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.</p>
-        <p>The true value of this phase lies in developing <strong>resilience, adaptability, and ethical agility.</strong> Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
+    <section class="section" aria-labelledby="why-title">
+        <p class="eyebrow">Why it matters</p>
+        <h2 id="why-title">The Value of Navigating Friction</h2>
+        <div class="callout">
+            <p>The middle of an engaged learning project is where real growth happens&mdash;and where real challenges surface. Requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.</p>
+            <p>The true value of this phase lies in developing <strong>resilience, adaptability, and ethical agility.</strong> Learning to manage scope creep, navigate mid-project feedback, and re-align technical decisions with human needs are the experiences that distinguish top UMSI graduates.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Phase 3: Managing &amp; Executing in the Field</h2>
-        <p>Conducting research, tracking progress, and maintaining clear communication with project sponsors.</p>
-
-        <article>
-            <h3>Focus &amp; Objectives</h3>
-            <ul>
-                <li><strong>Fieldwork &amp; Research Methods:</strong> Examine your identity, positionality, assumptions, and privileges. Learn about the community's history and consider how power may affect participation and decision-making.
-                </li>
-                <li><strong>Sponsor &amp; Client Updates:</strong> Apply human-centered design tools to observe contexts and extract insights.</li>
-                <li><strong>Feedback Loops:</strong> Maintain transparency with regular progress reporting.</li>
-                <li><strong>Formalizing Agreements:</strong> Gather, evaluate, and integrate constructive feedback mid-project.</li>
-            </ul>
-        </article>
+    <section class="section section-alt" aria-labelledby="goals-title">
+        <p class="eyebrow">Focus &amp; objectives</p>
+        <h2 id="goals-title">Managing &amp; Executing in the Field</h2>
+        <p class="section-intro">Conduct research, track progress, and maintain clear communication with project sponsors.</p>
+        <ol class="goal-grid">
+            <li class="goal-card">
+                <h3>Fieldwork &amp; Research Methods</h3>
+                <p>Apply human-centered design tools to observe contexts and extract insights.</p>
+            </li>
+            <li class="goal-card">
+                <h3>Sponsor &amp; Client Updates</h3>
+                <p>Maintain transparency with regular progress reporting.</p>
+            </li>
+            <li class="goal-card">
+                <h3>Feedback Loops</h3>
+                <p>Gather, evaluate, and integrate constructive feedback mid-project.</p>
+            </li>
+            <li class="goal-card">
+                <h3>Navigating Challenges</h3>
+                <p>Handle scope changes, team conflict, and ethical questions as they come up.</p>
+            </li>
+        </ol>
     </section>
 
-    <section>
-        <h2>Featured Resources &amp; Handouts</h2>
+    <section class="section" aria-labelledby="resources-title">
+        <p class="eyebrow">Toolkit</p>
+        <h2 id="resources-title">Featured Resources &amp; Handouts</h2>
+        <p class="section-intro">Resources grouped by the job they help you do. Ask the ELO for copies of any of these tools.</p>
+        <ol class="resource-list">
+            <li class="resource-card">
+                <p class="resource-type">Observation &amp; needfinding</p>
+                <h3>HFLI AEIOU Worksheet for Observations</h3>
+                <p class="resource-desc">Framework to categorize field observations: Activities, Environments, Interactions, Objects, and Users.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">User research</p>
+                <h3>HFLI User-Needs-Insights Worksheet</h3>
+                <p class="resource-desc">Translates raw interview and observation data into actionable design insights.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">Feedback management</p>
+                <h3>HFLI Feedback Worksheet</h3>
+                <p class="resource-desc">Structures mid-point feedback cycles between students, instructors, and partners.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">Case analysis</p>
+                <h3>Ginsberg Center Community Engagement Cases Handout</h3>
+                <p class="resource-desc">Practical scenarios illustrating ethical dilemmas and resolution strategies.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">Sponsor tracking</p>
+                <h3>Sponsor Dashboard Template</h3>
+                <p class="resource-desc">High-level status dashboard to keep external clients informed on project health.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">Communications plan</p>
+                <h3>Student Project Communications Plan Example &amp; Template</h3>
+                <p class="resource-desc">Establishes meeting cadences, channels, and response windows for teams.</p>
+            </li>
+            <li class="resource-card">
+                <p class="resource-type">Workflow tracking</p>
+                <h3>Project Management Worksheet</h3>
+                <p class="resource-desc">Break project goals into milestones and task assignments. <a href="https://docs.google.com/document/d/1twc-7TYWmb_PNrOBiDI1NuJqJAuhluTICr22GRd_NLc/edit?usp=drive_link">Open the worksheet</a></p>
+            </li>
+        </ol>
+    </section>
 
-        <article>
-            <h3>Resources by Category</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Category</th>
-                        <th scope="col">Resource Name</th>
-                        <th scope="col">Purpose</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Observation &amp; Needfinding</td>
-                        <td>HFLI - AEIOU Worksheet for Observations</td>
-                        <td>Framework to categorize field observations (Activities, Environments, Interactions, Objects, Users).</td>
-                    </tr>
-                    <tr>
-                        <td>User Research</td>
-                        <td>HFLI User-Needs-Insights Worksheet</td>
-                        <td>Translates raw interview and observation data into actionable design insights.</td>
-                    </tr>
-                    <tr>
-                        <td>Feedback Management</td>
-                        <td>HFLI Feedback Worksheet</td>
-                        <td>Structures mid-point feedback cycles between students, instructors, and partners.</td>
-                    </tr>
-                    <tr>
-                        <td>Case Analysis</td>
-                        <td>Ginsberg Center - Community Engagement Cases Handout</td>
-                        <td>Practical scenarios illustrating ethical dilemmas and resolution strategies.</td>
-                    </tr>
-                    <tr>
-                        <td>Sponsor Tracking</td>
-                        <td>Sponsor Dashboard Template - Organizational Excellence</td>
-                        <td>High-level status dashboard to keep external clients informed on project health.</td>
-                    </tr>
-                    <tr>
-                        <td>Communications Plan</td>
-                        <td>Student Project Communications Plan Example &amp; Template</td>
-                        <td>Establishes meeting cadences, channels, and response windows for teams.</td>
-                    </tr>
-                    <tr>
-                        <td>Workflow Tracking</td>
-                        <td>Project Management Worksheet</td>
-                        <td>Hands-on tool for breaking down project goals into milestones and task assignments.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+    <section class="section section-alt" aria-labelledby="ready-title">
+        <p class="eyebrow">Check your progress</p>
+        <h2 id="ready-title">Staying on Track</h2>
+        <p class="section-intro">Throughout this phase, check that:</p>
+        <ul class="checklist">
+            <li>We share progress updates with our partner on a regular schedule.</li>
+            <li>We have collected mid-project feedback and acted on it.</li>
+            <li>We have a plan for handling scope changes and team conflict.</li>
+            <li>We are reflecting on what we are learning, not just what we are building.</li>
+        </ul>
+    </section>
+
+    <section class="section" aria-labelledby="next-title">
+        <div class="next-step">
+            <p class="eyebrow">Coming soon</p>
+            <h2 id="next-title">Phase 4: Ending the Experience</h2>
+            <p>Resources for handing off your work, sharing results, and closing partnerships are on the way. In the meantime, the ELO team can help you plan your wrap-up.</p>
+            <a class="btn btn-primary" href="mailto:umsi.engagement@umich.edu">Email the ELO</a>
+        </div>
     </section>
 
 </main>
 
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-        <address>
-            <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-        </address>
-        <p>&copy; 2026 Regents of the University of Michigan</p>
+    <footer class="site-footer">
+        <div>
+            <p class="footer-title">UMSI Engaged Learning Office</p>
+            <p class="footer-about">Transformational engaged learning experiences for the School of Information and the communities we serve.</p>
+        </div>
+        <nav aria-label="Footer">
+            <h2 class="footer-heading">Explore</h2>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prep.html">Preparing</a></li>
+                <li><a href="starting.html">Starting</a></li>
+                <li><a href="during.html">During</a></li>
+            </ul>
+        </nav>
+        <div class="footer-contact">
+            <h2 class="footer-heading">Contact</h2>
+            <address>
+                <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a><br>
+                105 S. State Street<br>
+                Ann Arbor, MI 48109
+            </address>
+            <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">About the Engaged Learning Office</a>
+        </div>
+        <p class="footer-legal">&copy; 2026 Regents of the University of Michigan</p>
     </footer>
 
 </body>
