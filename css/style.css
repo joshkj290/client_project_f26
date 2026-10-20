@@ -1,37 +1,8 @@
-/* ==========================================================================
-   UMSI Engaged Learning Office: Deliverable #2 (Mobile First)
-   Author: Joshua John (SI 338, Fall 2026)
-
-   This is the default (mobile) design, built for screens under 480px.
-   There are intentionally NO width-based media queries in this file.
-   The only media query is prefers-reduced-motion (an accessibility query).
-   Layouts still stretch gracefully on larger screens through fluid units,
-   max-width containers, and auto-fit grids.
-
-   Citations / references:
-   - Reset: html5doctor.com Reset Stylesheet v1.6.1 (see css/html5reset.css)
-   - Colors: U-M Brand Guidelines, https://brand.umich.edu/design-resources/colors/
-     (Michigan Blue #00274C, Maize #FFCB05, Arboretum Blue #2F65A7)
-   - Skip link pattern: W3Schools "How TO - Skip to Main Content" and
-     WebAIM "Skip Navigation Links" (https://webaim.org/techniques/skipnav/)
-   - .visually-hidden: The A11Y Project, https://www.a11yproject.com/posts/how-to-hide-content/
-   - Reduced motion block: adapted from Andy Bell's "Modern CSS Reset"
-     (https://andy-bell.co.uk/a-more-modern-css-reset/)
-   - Centering trick padding-inline: max(gutter, (100% - width) / 2) adapted from
-     Kevin Powell's "full-bleed layout" videos.
-   - GenAI: Claude (Anthropic) helped draft parts of this stylesheet's grid
-     layouts in October 2026. I reviewed, tested, and edited all of it.
-   ========================================================================== */
-
-
-/* ---------- 1. Design tokens ---------- */
 :root {
-    /* U-M brand colors */
     --blue: #00274C;
     --maize: #FFCB05;
     --arb-blue: #2F65A7;
 
-    /* Supporting neutrals (all pass WCAG AA with the text colors used on them) */
     --blue-raised: #0B3A66;
     --blue-line: #4A6D93;
     --ink: #1F2933;
@@ -41,7 +12,6 @@
     --line: #D5DCE4;
     --white: #FFFFFF;
 
-    /* Spacing, shape, and type */
     --gutter: 1rem;
     --content: 60rem;
     --radius: 0.75rem;
@@ -50,8 +20,6 @@
     --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-/* ---------- 2. Base elements ---------- */
 html {
     scroll-behavior: smooth;
 }
@@ -110,7 +78,6 @@ a:hover {
     text-decoration-thickness: 0.2em;
 }
 
-/* One clear focus style everywhere: a thick blue ring on light backgrounds... */
 a:focus-visible,
 button:focus-visible {
     outline: 0.1875rem solid var(--blue);
@@ -118,7 +85,6 @@ button:focus-visible {
     border-radius: 0.25rem;
 }
 
-/* ...and a maize ring on the dark blue areas so it is always visible. */
 .site-header a:focus-visible,
 .site-footer a:focus-visible,
 .hero-card a:focus-visible,
@@ -128,7 +94,7 @@ button:focus-visible {
 }
 
 main:focus {
-    outline: none; /* main only receives focus from the skip link */
+    outline: none; 
 }
 
 .visually-hidden {
@@ -143,11 +109,9 @@ main:focus {
     border: 0;
 }
 
-
-/* ---------- 3. Skip to Main Content ---------- */
 .skip-link {
     position: absolute;
-    top: -10rem;           /* hidden off-screen on page load */
+    top: -10rem;          
     left: var(--gutter);
     z-index: 100;
     padding: 0.75rem 1.25rem;
@@ -160,12 +124,9 @@ main:focus {
 }
 
 .skip-link:focus {
-    top: 0;                /* slides into view when it receives keyboard focus */
+    top: 0;               
 }
 
-
-/* ---------- 4. Layout helpers ---------- */
-/* Full-bleed backgrounds with centered content, without a media query */
 .section,
 .page-intro,
 .site-header,
@@ -195,8 +156,6 @@ main:focus {
     margin-bottom: 1.5rem;
 }
 
-
-/* ---------- 5. Header + primary navigation ---------- */
 .site-header {
     display: grid;
     gap: 1rem;
@@ -239,7 +198,6 @@ main:focus {
     color: #DCE3EC;
 }
 
-/* 2 x 2 grid of large, thumb-friendly navigation tiles */
 .nav-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -274,8 +232,6 @@ main:focus {
     color: var(--maize);
 }
 
-/* Active page: color change PLUS a filled tile, thick underline,
-   and a "You are here" label, so it never relies on color alone. */
 .nav-list a[aria-current="page"] {
     background-color: var(--maize);
     border-color: var(--maize);
@@ -296,8 +252,6 @@ main:focus {
     content: " \2022  You are here";
 }
 
-
-/* ---------- 6. Home hero (overlapping grid) ---------- */
 .hero {
     display: grid;
     grid-template-columns:
@@ -351,8 +305,6 @@ main:focus {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-
-/* ---------- 7. Buttons ---------- */
 .btn-row {
     display: grid;
     gap: 0.75rem;
@@ -394,8 +346,6 @@ main:focus {
     color: var(--blue);
 }
 
-
-/* ---------- 8. Inner-page intro + lifecycle tracker ---------- */
 .page-intro {
     padding-block: 1.75rem 1.5rem;
     background-color: var(--surface);
@@ -421,7 +371,6 @@ main:focus {
     color: var(--muted);
 }
 
-/* Five-column grid showing where this page sits in the lifecycle */
 .journey {
     position: relative;
     display: grid;
@@ -431,7 +380,6 @@ main:focus {
     list-style: none;
 }
 
-/* connecting line drawn behind the step circles */
 .journey::before {
     content: "";
     position: absolute;
@@ -443,7 +391,7 @@ main:focus {
 }
 
 .journey-step {
-    position: relative; /* sits above the line */
+    position: relative;
     display: grid;
     justify-items: center;
     align-content: start;
@@ -494,8 +442,6 @@ a.journey-step:hover .journey-label {
     border-color: var(--muted);
 }
 
-
-/* ---------- 9. Callout + checklist ---------- */
 .callout {
     padding: 1.25rem;
     background-color: var(--maize-tint);
@@ -530,8 +476,6 @@ a.journey-step:hover .journey-label {
     line-height: 1;
 }
 
-
-/* ---------- 10. Goal cards ---------- */
 .goal-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -579,8 +523,6 @@ a.journey-step:hover .journey-label {
     color: var(--muted);
 }
 
-
-/* ---------- 11. Resource cards ---------- */
 .resource-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
@@ -613,7 +555,6 @@ a.journey-step:hover .journey-label {
     transform: translateY(-0.125rem);
 }
 
-/* zero-padded index number (01, 02...) in the left grid column */
 .resource-card::before {
     content: counter(resource, decimal-leading-zero);
     grid-area: num;
@@ -642,7 +583,6 @@ a.journey-step:hover .journey-label {
     color: var(--blue);
 }
 
-/* extra vertical padding so single-line links are comfortable tap targets */
 .resource-card h3 a,
 .resource-desc a {
     display: inline-block;
@@ -688,8 +628,6 @@ a.journey-step:hover .journey-label {
     font-weight: 700;
 }
 
-
-/* ---------- 12. Home: lifecycle timeline ---------- */
 .timeline {
     display: grid;
     gap: 1rem;
@@ -703,7 +641,6 @@ a.journey-step:hover .journey-label {
     column-gap: 0.875rem;
 }
 
-/* vertical connector between steps */
 .timeline-item:not(:last-child)::before {
     content: "";
     position: absolute;
@@ -762,8 +699,6 @@ a.journey-step:hover .journey-label {
     font-weight: 800;
 }
 
-
-/* ---------- 13. Home: experience types + resource chips ---------- */
 .type-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
@@ -809,8 +744,6 @@ a.journey-step:hover .journey-label {
     font-weight: 700;
 }
 
-
-/* ---------- 14. Blue call-to-action panels ---------- */
 .next-step,
 .help-banner {
     display: grid;
@@ -839,8 +772,6 @@ a.journey-step:hover .journey-label {
     margin-top: 0.5rem;
 }
 
-
-/* ---------- 15. Footer ---------- */
 .site-footer {
     display: grid;
     gap: 1.75rem;
@@ -900,8 +831,6 @@ a.journey-step:hover .journey-label {
     color: #DCE3EC;
 }
 
-
-/* ---------- 16. Accessibility: respect reduced-motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
